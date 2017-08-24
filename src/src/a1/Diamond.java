@@ -23,18 +23,22 @@ public class Diamond {
                 reverse.append("#");
             }
 
-            reverse.append("\n");
             k--;
             star+=2;
+            if (k==0)break;
+            else reverse.append("\n");
+
+
         }
 
         System.out.println(reverse);
+
         System.out.println(reverse.reverse());
 
 
     }
 
     public static void main(String[] args) {
-        printDiamond(4);
+        printDiamond(3);
     }
 }
